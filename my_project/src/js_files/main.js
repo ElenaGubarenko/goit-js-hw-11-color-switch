@@ -23,11 +23,15 @@ const changeColor = () => {
 
 const doStart = () => {
   startInterval = setInterval(changeColor, 1000);
-  startRef.disabled = 'true';
+  startRef.disabled = true;
+  console.dir(startRef.disabled);
 };
 
 const doStop = () => {
-  return clearInterval(startInterval);
+  const clearInt = clearInterval(startInterval);
+  startRef.disabled = false;
+  console.dir(startRef.disabled);
+  return clearInt;
 };
 
 startRef.addEventListener('click', doStart);
