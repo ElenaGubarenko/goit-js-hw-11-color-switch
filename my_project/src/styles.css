@@ -1,0 +1,17 @@
+.start {
+  font-size: 30px;
+  border: none;
+  color: white;
+  background-color: rgb(73, 184, 73);
+  width: 100px;
+  height: 100px;
+}
+
+.stop {
+  font-size: 30px;
+  border: none;
+  color: white;
+  background-color: salmon;
+  width: 100px;
+  height: 100px;
+}
